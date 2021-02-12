@@ -1,0 +1,59 @@
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{graphicx}   % Images
+\usepackage{subfiles}   % Include subfiles
+\usepackage{hyperref}   % Nice referencing with clickable links
+\usepackage{amsmath}    % Math
+\usepackage[style=ieee]{biblatex}   % Citations
+\usepackage{fvextra}
+\usepackage{csquotes}   % Honestly no idea what this does...
+\usepackage{minted}
+\usepackage{comment}
+\usepackage{amssymb}
+\usepackage[parfill]{parskip}
+\usepackage{pythonhighlight}
+\usepackage{gensymb}
+\usepackage{cleveref}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{booktabs}
+
+\graphicspath{{img/}{../img/}}
+\addbibresource{references.bib}
+
+%\setlength{\parindent}{0pt}
+
+\title{Logistic Regression and Feed Forward Neural Network (FFNN) analysis on the MNIST and Franke's Function Dataset}
+\author{Knut Magnus Aasrud \\ Philip Karim Niane \\ Ida Due-Sørensen}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\subfile{sections/abstract}
+
+\subfile{sections/introduction}
+
+\subfile{sections/theory}
+
+\subfile{sections/method}
+
+\subfile{sections/results}
+
+\subfile{sections/discussion}
+
+\subfile{sections/conclusion}
+
+\printbibliography
+\clearpage
+\appendix
+\subfile{sections/appendix}
+
+
+%\bibliographystyle{apalike}
+
+
+\end{document}
